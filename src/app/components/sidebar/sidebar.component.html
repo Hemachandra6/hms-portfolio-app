@@ -1,0 +1,36 @@
+<button class="btn btn-primary d-md-none" id="toggleSidebar">
+    <i class="fas fa-bars"></i> 
+</button>
+<div class="d-flex flex-column flex-shrink-0 p-3 bg-dark text-white" style="width: 250px; height: 100vh; overflow-y: auto;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <span class="fs-4">My Portfolio</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+            <a href="#" class="nav-link text-white" (click)="scrollToSection($event, 'home')">
+                <i class="fas fa-home"></i> Home
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link text-white" (click)="scrollToSection($event, 'about')">
+                <i class="fas fa-user"></i> About
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link text-white" (click)="scrollToSection($event, 'skills')">
+                <i class="fas fa-tools"></i> Skills
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link text-white" (click)="scrollToSection($event, 'projects')">
+                <i class="fas fa-project-diagram"></i> Projects
+            </a>
+        </li>
+        <li>
+            <a href="#" class="nav-link text-white" (click)="scrollToSection($event, 'contact')">
+                <i class="fas fa-envelope"></i> Contact
+            </a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,16 @@
+:host {
+  background-color: #1a1a1a;  // Dark background
+  color: #f8f9fa;  // Light text
+}
+
+.card {
+  background-color: #2d2d2d;  // Dark background for project cards
+  color: #f8f9fa;  // Light text inside cards
+}
+
+a {
+  color: #03dac6;  // Standout link color
+  &:hover {
+    color: #00a896;  // Slightly darker link on hover
+  }
+}

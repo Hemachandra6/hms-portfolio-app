@@ -1,1 +1,129 @@
-/* You can add global styles to this file, and also import other style files */
+// General body styles for a dark background
+body {
+  background-color: #050505 !important;  // Dark background
+  color: #f8f9fa !important;  // Light text for contrast
+}
+
+// Navbar styling with a dark background and light text
+.navbar {
+  background-color: #343a40 !important;  // Dark grey background for the navbar
+  color: #f8f9fa !important;  // Light text
+}
+
+.navbar-brand, .nav-link {
+  color: #f8f9fa !important;  // Light text for navbar brand and links
+}
+
+// Styling cards or sections with a dark background
+.card {
+  background-color: #2d2d2d !important;  // Slightly lighter dark background for cards
+  color: #f8f9fa !important;  // Light text inside cards
+  border: none;  // Remove default borders
+}
+
+// Styling buttons with a contrast color
+.btn {
+  background-color: #bb86fc !important;  // A contrasting button color (purple)
+  border-color: #bb86fc !important;
+  color: #121212 !important;  // Dark text for contrast on buttons
+  &:hover {
+    background-color: #3700b3 !important;  // Darker purple on hover
+    border-color: #3700b3 !important;
+    color: #f8f9fa !important;  // Light text on hover
+  }
+}
+
+// Links should stand out from the background
+a {
+  color: #03dac6 !important;  // Light greenish links
+  &:hover {
+    color: #00a896 !important;  // Darker shade on hover
+  }
+}
+
+// Form fields styling for dark background
+input, textarea {
+  background-color: #2d2d2d !important;  // Dark background for form inputs
+  color: #f8f9fa !important;  // Light text inside form fields
+  border: 1px solid #f8f9fa !important;  // Light border
+}
+
+// Containers and sections with a dark background
+.container, .row, .col {
+  background-color: #050505 !important;  // Match the overall dark background
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.row {
+  height: 100%;
+}
+
+.col-3 {
+  height: 100%;
+}
+
+.col-9 {
+  height: 100%;
+  overflow-y: auto;
+}
+
+
+
+.bento-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.bento-box {
+  background-color: #24af91;  /* Base color */
+  color: #ECF0F1;  /* Light text color */
+  border-radius: 15px;  
+  padding: 20px;
+  transition: background-color 0.3s ease;  /* Smooth transition */
+  text-align: center;  
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Optionally change the background color on hover for visual feedback */
+.bento-box:hover {
+  background-color: #3498DB;
+  transform: scale(1.0001);
+}
+
+.bento-box h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.bento-box p {
+  font-size: 16px;
+  color: #BDC3C7; /* Light gray for text */
+}
+
+.bg-dark {
+  display: block; /* Default to block display */
+}
+
+@media (max-width: 767.98px) {
+  .bg-dark {
+      display: none; /* Hide sidebar on extra small screens */
+  }
+}

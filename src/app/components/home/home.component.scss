@@ -1,0 +1,70 @@
+:host {
+  display: grid;
+  color: #f8f9fa; 
+}
+
+.container {
+  text-align: center;
+
+  img {
+    width: 350px; // Adjust the size as needed
+    height: auto;
+    border: 3px solid #fff; // Optional: add a border
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Optional: add shadow for a better effect
+  }
+
+  h1 {
+    color: #f8f9fa; // Change as per your theme
+  }
+
+  p {
+    color: #e0e0e0; // Change as per your theme
+  }
+}
+
+
+/* Add this in your global SCSS or component-specific SCSS */
+@keyframes cinematicDrop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); /* Starting position above the viewport */
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0); /* Arrives at position */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Fully visible at rest position */
+  }
+}
+
+.cinematic-text {
+  animation: cinematicDrop 1.5s ease-out forwards; /* Adjust the timing and easing function */
+  opacity: 0; /* Hide initially */
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.cinematic-subtext {
+  animation: cinematicDrop 2s ease-out forwards;
+  opacity: 0;
+  font-size: 1.5rem;
+  animation-delay: 0.5s; 
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.profile-image {
+  border-radius: 15px; /* Slightly rounded corners for a modern look */
+  border: 2px solid #3498db; /* Add a border color */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.profile-image:hover {
+  transform: scale(1.01); /* Slightly zoom on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* Deepen shadow on hover */
+}

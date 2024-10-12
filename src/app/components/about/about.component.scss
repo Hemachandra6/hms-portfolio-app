@@ -1,0 +1,13 @@
+.about-title, .career-title, .coding-title, .interests-title, .forward-title {
+    color: #f8f9fa; /* Light text color */
+    margin-bottom: 15px; /* Space below each title */
+    font-size: 1.8rem; /* Increased font size */
+    font-weight: bold; /* Bold text */
+}
+
+.about-description, .career-description, .coding-description, .interests-description, .forward-description {
+    color: #e0e0e0; /* Slightly lighter text for paragraphs */
+    font-size: 1.1rem; /* Increased font size for readability */
+    line-height: 1.6; /* Improved line height for better spacing */
+    margin-bottom: 15px; /* Space below each paragraph */
+}

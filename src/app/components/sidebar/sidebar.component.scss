@@ -1,0 +1,35 @@
+.bg-dark {
+  background-color: #1f1f1f !important;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-link i {
+  margin-right: 10px;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+}
+
+/* Initially hide the sidebar on small screens */
+#sidebar {
+    display: none; /* Hidden by default */
+}
+
+/* Show sidebar on medium (md) screens and larger */
+@media (min-width: 768px) {
+    #sidebar {
+        display: flex;
+    }
+}
